@@ -1,0 +1,18 @@
+<%# The answer.html.erb will display the
+question you ask your coach as well as his answer. %>
+
+<div class = "container">
+<div class = "question">
+  <div>
+  <%= @question %>
+  <p> - you </p>
+  </div>
+</div>
+
+<div class = "answer">
+<%= @answer %>
+<p> - Your coach </p>
+</div>
+
+<%# <a href="/ask">Ask a new question</a> %>
+<%= link_to "Ask a new question", "/ask" %>
