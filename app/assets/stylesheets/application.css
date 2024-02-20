@@ -13,30 +13,32 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
-.container {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  padding: 10;
+ body {
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
 }
 
-.custom-submit {
-  background-color: blue;
-  color: white;
-  border-color: blue;
+h1 {
+  font-weight: 400;
 }
 
-.question {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  border-left: grey 5px;
-  padding: 10px;
+blockquote {
+  border-left: 6px solid #ddd;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
 }
 
-.answer {
- background-color: yellowgreen;
- border-left: grey 5px;
- padding: 10px;
+blockquote.coach {
+  background-color: lightyellow;
+}
+
+blockquote.coach p {
+  font-weight: 400;
+}
+
+cite:before {
+  content: "—"
 }
